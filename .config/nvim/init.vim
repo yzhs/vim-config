@@ -49,6 +49,26 @@ let g:gfm_syntax_highlight_table         = 1
 let g:gfm_syntax_highlight_issue_number  = 0
 let g:gfm_syntax_highlight_checkbox      = 1
 
+" haskell-vim
+let g:haskell_classic_highlighting = 1
+
+let g:haskell_indent_if = 0
+let g:haskell_indent_case = 0
+let g:haskell_indent_let = 4
+let g:haskell_indent_where = 6
+let g:haskell_indent_before_where = 2
+let g:haskell_indent_after_bare_where = 2
+let g:haskell_indent_do = 3
+let g:haskell_indent_in = 0
+let g:haskell_indent_guard = 2
+
+let g:haskell_indent_case_alternative = 1
+
+let g:haskell_conceal   = 0
+let g:haskell_haddock   = 1
+let g:haddock_browser   = "firefox"
+
+
 " vim-markdown settings
 let g:vim_markdown_frontmatter = 1
 let g:vim_markdown_toml_frontmatter = 1
@@ -94,11 +114,6 @@ let g:Tex_Env_minted      = "\\begin{minted}{gap}\<CR><++>\<CR>\\end{minted}\<CR
 let g:Tex_FoldedSections    = ""
 let g:Tex_FoldedEnvironment = ""
 let g:Tex_FoldedMisc        = ""
-
-let g:haskell_conceal   = 0
-let g:haskell_indent_if = 0
-let g:haskell_haddock   = 1
-let g:haddock_browser   = "firefox"
 
 let omlet_indent_let = 0
 let g:clj_highligt_builtins=1
