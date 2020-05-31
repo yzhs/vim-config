@@ -49,7 +49,8 @@ Plug 'python-mode/python-mode', { 'branch': 'develop'} " Python
 Plug 'wlangstroth/vim-racket'               " Racket
 Plug 'dag/vim-fish'                         " Fish syntax highlighting
 Plug 'rust-lang/rust.vim'                   " Rust
-"Plugin 'lukerandall/haskellmode-vim'         " Haskell
+Plug 'neovimhaskell/haskell-vim'            " Haskell
+Plug 'itchyny/vim-haskell-indent'           " proper indentation
 "Plugin 'dag/vim2hs'                          " Haskell
 Plug 'vim-scripts/VimClojure'               " Clojure
 Plug 'LnL7/vim-nix'                         " Nix expressions
@@ -61,13 +62,14 @@ Plug 'vim-scripts/omlet.vim'                " OCaml syntax highlighting
 Plug 'rhysd/vim-clang-format'               " Automatically format C, C++, Objective C, Java, JavaScript
 Plug 'ARM9/arm-syntax-vim'                  " ARM assembly
 Plug 'leafgarland/typescript-vim'           " Typescript syntax highlighting
-Plug 'nickhutchinson/vim-cmake-syntax'      " CMake 
+Plug 'nickhutchinson/vim-cmake-syntax'      " CMake
 Plug 'yzhs/mercury-vim', { 'branch': 'vim-plugin' } " Mercury (functional logic programming language)
 Plug 'JDevlieghere/llvm.vim'                " LLVM *.ll and tablegen *.td
 Plug 'artur-shaik/vim-javacomplete2'        " Java semantic completion
 Plug 'purescript-contrib/purescript-vim'    " Purescript
 Plug 'vmchale/ion-vim'                      " Ion shell
 Plug 'heaths/vim-msbuild'                   " MSBuild
+Plug 'leanprover/lean.vim'                  " Lean theorem prover
 
 " Formal grammars
 Plug 'rollxx/vim-antlr'                     " ANTLR compiler generator
@@ -92,6 +94,7 @@ Plug 'cespare/vim-toml'                     " TOML markup format
 Plug 'Matt-Deacalion/vim-systemd-syntax'    " Systemd configuration format
 Plug 'peterhoeg/vim-qml'                  " QML GUI markup
 Plug 'hjson/vim-hjson'                      " Human readable alternative to JSON
+Plug 'robbles/logstash.vim'
 
 " Text formats
 Plug 'gerw/vim-latex-suite'                 " (La)TeX
@@ -133,7 +136,7 @@ Plug 'vim-scripts/utl.vim'                  " Allow links in plain text files in
 ""     \ 'branch': 'next',
 ""     \ 'do': 'bash install.sh',
 ""     \ }
-"" 
+""
 "" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 "" let g:LanguageClient_serverCommands = {
 ""     \ 'rust': ['/usr/bin/rustup', 'run', 'nightly', 'rls'],
@@ -141,7 +144,7 @@ Plug 'vim-scripts/utl.vim'                  " Allow links in plain text files in
 "" "    \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
 "" "    \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
 "" "    \ 'python': ['/usr/local/bin/pyls'],
-"" 
+""
 "" nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 "" " Or map each action separately
 "" nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
@@ -173,15 +176,14 @@ Plug 'AndrewRadev/deleft.vim'               " Delete surrounding code, e.g. an i
 "
 " Color schemes
 "
-Plug 'chriskempson/base16-vim'
-Plug 'lisposter/vim-blackboard'
-Plug 'tomasr/molokai'
+"Plug 'lisposter/vim-blackboard'
+"Plug 'tomasr/molokai'
 Plug 'tpope/vim-vividchalk'
+"Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 
 " VCS
 Plug 'tpope/vim-fugitive'                   " Git
 Plug 'git://repo.or.cz/vcscommand'
-Plug 'rhysd/committia.vim'                  " Improved mode for editing git commits
 
 "
 "General text editing
@@ -243,6 +245,9 @@ Plug 'haya14busa/incsearch.vim'              " Highlight search matches incremen
 
 " Spell checking
 "Plugin 'Konfekt/vim-guesslang' " Automatically detect the language used in a given buffer
+
+" Quickly and easily access RFCs
+Plug 'mhinz/vim-rfc'
 
 " All of your Plugins must be added before the following line
 call plug#end() " required
