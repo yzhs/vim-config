@@ -25,8 +25,7 @@ function! BuildYCM(info)
 endfunction
 
 "Plug 'ervandew/supertab'                    " Completion using <Tab> in insert mode
-Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'} " Generate .ycm_extra_conf.py
+"Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') } " using system YCM
 Plug 'sirver/ultisnips'                     " Snippet system
 "Plug 'Shougo/neosnippet.vim'
 Plug 'honza/vim-snippets'                   " Collection of snippets for use with UltiSnips
