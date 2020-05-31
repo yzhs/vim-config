@@ -31,14 +31,14 @@ let g:gtfo#terminals = { 'unix': 'xfce4-terminal --working-directory' }
 
 " Go syntax highlighting settings
 let g:go_highlight_build_constraints = 1
-let g:go_highlight_extra_types = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_structs = 1
-let g:go_highlight_types = 1
-let g:go_auto_sameids = 1 " highlight other occurrences of the variable the cursor is on right now
+let g:go_highlight_extra_types       = 1
+let g:go_highlight_fields            = 1
+let g:go_highlight_functions         = 1
+let g:go_highlight_methods           = 1
+let g:go_highlight_operators         = 1
+let g:go_highlight_structs           = 1
+let g:go_highlight_types             = 1
+let g:go_auto_sameids                = 1 " highlight other occurrences of the variable the cursor is on right now
 
 " vim-gfm (GitHub flavored Markdown) settings
 let g:gfm_syntax_highlight_inline_code   = 1
