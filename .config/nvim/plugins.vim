@@ -44,8 +44,12 @@ Plug 'ddollar/golang-template.vim'          " Go templates
 Plug 'idris-hackers/idris-vim'              " Idris
 Plug 'pangloss/vim-javascript'              " JavaScript
 "Plug 'JuliaLang/julia-vim'                  " Julia
-"Plug 'hdima/python-syntax'                  " Python
-Plug 'python-mode/python-mode', { 'branch': 'develop'} " Python
+
+" Disabled because it conflicts with jedi-vim and I want to have
+" jedi for autocompletion
+"Plug 'python-mode/python-mode', { 'branch': 'develop'} " Python
+Plug 'davidhalter/jedi-vim'                 " Autocomplete support for Python
+
 Plug 'wlangstroth/vim-racket'               " Racket
 Plug 'dag/vim-fish'                         " Fish syntax highlighting
 Plug 'rust-lang/rust.vim'                   " Rust
