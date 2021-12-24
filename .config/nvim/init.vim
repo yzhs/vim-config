@@ -8,6 +8,9 @@ colorscheme vividchalk
 "colorscheme blackboard
 "colorscheme vibrantink
 
+" Enable live preview
+set inccommand=nosplit
+
 source $HOME/.config/nvim/options.vim
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
