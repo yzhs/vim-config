@@ -24,8 +24,9 @@ function! BuildYCM(info)
   endif
 endfunction
 
-"Plug 'ervandew/supertab'                    " Completion using <Tab> in insert mode
 "Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') } " using system YCM
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 Plug 'sirver/ultisnips'                     " Snippet system
 "Plug 'Shougo/neosnippet.vim'
 Plug 'honza/vim-snippets'                   " Collection of snippets for use with UltiSnips
@@ -48,7 +49,9 @@ Plug 'pangloss/vim-javascript'              " JavaScript
 " Disabled because it conflicts with jedi-vim and I want to have
 " jedi for autocompletion
 "Plug 'python-mode/python-mode', { 'branch': 'develop'} " Python
-Plug 'davidhalter/jedi-vim'                 " Autocomplete support for Python
+
+"installed via pacman
+"Plug 'davidhalter/jedi-vim'                 " Autocomplete support for Python
 
 Plug 'wlangstroth/vim-racket'               " Racket
 Plug 'dag/vim-fish'                         " Fish syntax highlighting
@@ -177,6 +180,11 @@ Plug 'evidanary/grepg.vim'                  " Search GrepPage.com for quick manu
 
 Plug 'AndrewRadev/deleft.vim'               " Delete surrounding code, e.g. an if statement
 
+" Convert units, base, hex/rgb/hsl, etc.
+"Plug 'simonefranza/nvim-conv'
+Plug 'glts/vim-magnum'
+Plug 'glts/vim-radical'
+
 "
 " Color schemes
 "
@@ -186,8 +194,8 @@ Plug 'tpope/vim-vividchalk'
 "Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 
 " VCS
-Plug 'tpope/vim-fugitive'                   " Git
-Plug 'git://repo.or.cz/vcscommand'
+"Plug 'tpope/vim-fugitive'                   " Git
+"Plug 'git://repo.or.cz/vcscommand'
 
 "
 "General text editing
