@@ -494,6 +494,14 @@ map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
 nnoremap <leader>a :cclose<CR>
 
+" Base conversion, among others
+nnoremap <Leader>cd :<C-u>ConvDec<Space>
+nnoremap <Leader>ch :<C-u>ConvHex<Space>
+nnoremap <Leader>co :<C-u>ConvOct<Space>
+nnoremap <Leader>cb :<C-u>ConvBin<Space>
+nnoremap <Leader>cs :<C-u>ConvStr<Space>
+nnoremap <Leader>ct :<C-u>ConvBytes<Space>
+
 " Key bindings }}}
 
 " Other
