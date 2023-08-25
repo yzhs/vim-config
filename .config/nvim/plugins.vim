@@ -119,6 +119,7 @@ Plug 'vim-scripts/AnsiEsc.vim'              " Display colored text from the term
 Plug 'jamessan/vim-gnupg'                   " Automatically en-/decrypt GnuPG encrypted files
 Plug 'editorconfig/editorconfig-vim'        " respect .editorconfig files
 Plug 'jremmen/vim-ripgrep'                  " Fast fulltext search using ripgrep
+Plug 'jinh0/eyeliner.nvim'                  " Highlight unique characters in the current line. Useful to find f/F targets.
 
 "
 " User interface
