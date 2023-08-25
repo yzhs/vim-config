@@ -78,6 +78,8 @@ Plug 'vmchale/ion-vim'                      " Ion shell
 Plug 'heaths/vim-msbuild'                   " MSBuild
 Plug 'leanprover/lean.vim'                  " Lean theorem prover
 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 " Formal grammars
 Plug 'rollxx/vim-antlr'                     " ANTLR compiler generator
 Plug 'killphi/vim-ebnf'                     " Extended Backus-Naur-Form
